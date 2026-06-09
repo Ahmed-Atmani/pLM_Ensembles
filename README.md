@@ -1,18 +1,10 @@
 # Exploring pLM Ensembles
-*Analyzing How Protein Language Models Can Be Combined to Improve Downstream Predictive Performance*
+***Analyzing How Protein Language Models Can Be Combined to Improve Downstream Predictive Performance***
 
-This is the GitHub repository of my master thesis at the VUB. 
-The thesis text can be found in the root of this repository.
+This is the GitHub repository of my master thesis at the VUB. The thesis text can be found in the root of this repository.
 
 ## Abstract
-Protein Language Models (pLMs) have been shown to capture meaningful patterns from large protein sequence datasets such as UniRef, generating latent representations of proteins that can be used to train predictive models for downstream tasks in bioinformatics.  
-In this thesis, we implemented and evaluated multiple methods for combining a selection of twelve different pLMs varying in specialization, size, base architecture, and training objective, and analysed their effects on predictive performance using the DRGN dataset, which was used as a binary classification task for cancer driver mutations.  
-We experimented with feature-level and decision-level, as well as parallel and layered ensemble architectures, in addition to three distinct strategies for combining wild-type and variant sequences.  
-Furthermore, we analysed which pLMs contributed most to the predictions, and which combinations yielded the best predictive performance.  
-The results show that using exclusively the difference between the wild-type and variant representations leads to the best predictive performance, as it forces the task learners to focus on mutation-specific information while avoiding an increase in input dimensionality, unlike the other two variant combination strategies.  
-Additionally, our experiments indicate that the predictive performance of pLM combinations depends strongly on their interaction: some embedding spaces complement each other, while others partially overlap or even dominate one another depending on the pairing.  
-Overall, ESM-2, UniRep, and Ankh3 produced the most informative embeddings with respect to the downstream task considered in this study.  
-
+Protein Language Models (pLMs) have been shown to capture meaningful patterns from large protein sequence datasets such as UniRef, generating latent representations of proteins that can be used to train predictive models for downstream tasks in bioinformatics. In this thesis, we implemented and evaluated multiple methods for combining a selection of twelve different pLMs varying in specialization, size, base architecture, and training objective, and analysed their effects on predictive performance using the DRGN dataset, which was used as a binary classification task for cancer driver mutations. We experimented with feature-level and decision-level, as well as parallel and layered ensemble architectures, in addition to three distinct strategies for combining wild-type and variant sequences. Furthermore, we analysed which pLMs contributed most to the predictions, and which combinations yielded the best predictive performance. The results show that using exclusively the difference between the wild-type and variant representations leads to the best predictive performance, as it forces the task learners to focus on mutation-specific information while avoiding an increase in input dimensionality, unlike the other two variant combination strategies. Additionally, our experiments indicate that the predictive performance of pLM combinations depends strongly on their interaction: some embedding spaces complement each other, while others partially overlap or even dominate one another depending on the pairing. Overall, ESM-2, UniRep, and Ankh3 produced the most informative embeddings with respect to the downstream task considered in this study.  
 
 ## File Structure Overview
 
@@ -55,7 +47,7 @@ In order for this script to work, the embedding pre-computation pipeline should 
 This script will train many ensemble models with different pLM combinations, which were used to get the results for the first experiment.
 The first experiment entails the comparison of downstream predictive performance of the three wild-type & variant embedding combination strategies presented in the figure below.
 
-![alt text](assets/var-comb-strategies.png)
+![Wild-Type and Variant Combination Strategies](assets/var-comb-strategies.png)
 
 To run this script, execute the following command:
 
