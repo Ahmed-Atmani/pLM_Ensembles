@@ -79,4 +79,4 @@ python -m scripts.2-4_ensemble_types_experiment/1_combination_run_script.py
 <p align="center"><i>Diagram of the Task-Level with Meta-Learner Ensemble Architecture</i></p>
 
 ![Gradient Boosting Ensemble Architecture](assets/GB_diagram.png)
-<p align="center"><i>Diagram of the Task-Level with Meta-Learner Ensemble Architecture</i></p>
+<p align="center"><i>Diagram of the Gradient Boosting Ensemble Architecture</i></p>
