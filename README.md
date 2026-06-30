@@ -15,7 +15,7 @@ Protein Language Models (pLMs) have been shown to capture meaningful patterns fr
 ├── pipelines       # The implementation of the pipelines
 ├── plm_models      # The wrappers of the pLMs
 ├── scripts         # Scripts to run the pipelines
-├── slides          # Thesis defense presentation slides
+├── slides.pdf      # Thesis defense presentation slides
 └── thesis.pdf      # Full thesis text
 
 ```
